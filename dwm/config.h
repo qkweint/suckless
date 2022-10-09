@@ -22,10 +22,13 @@ static const char col_purp[]        = "#9966cc";
 static const char col_red1[]        = "#fb0000";
 static const char col_red2[]        = "#2B0000";
 static const char col_black[]       = "#151515";
+static const char col_brown[]       = "#bd3816";
+static const char col_blue[]        = "#416FAF";
+static const char col_blue2[]   = "#233f66";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_white1, col_black, col_red2 },
-	[SchemeSel]  = { col_black, col_red1,  col_red1  },
+	[SchemeNorm] = { col_white1, col_black, col_blue2 },
+	[SchemeSel]  = { col_black, col_blue,  col_blue  },
 };
 
 /* tagging */
@@ -70,7 +73,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] =			{ "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_black, "-nf", col_white1, "-sb", col_red1, "-sf", col_black, NULL };
+static const char *dmenucmd[] =			{ "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_black, "-nf", col_white1, "-sb", col_blue, "-sf", col_black, NULL };
 static const char *termcmd[]  = 		{ "st", NULL };
 static const char *mpdmenucmd[] = 		{ "/home/kweint/Documents/Scripts/dmenu/mpdmenu", NULL};
 static const char *mpdvolumedowncmd[] =		{ "/home/kweint/Documents/Scripts/dunst/volumedunst", "mpd", "down" };
