@@ -11,5 +11,5 @@ echo "$fullpath"
 if test -f "$fullpath"; then
 	dunstify -a ncmpcpp -r 27072 "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)" -i "$previewname" -t 2500
 else
-	dunstify -a ncmpcpp -r 27072 "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)" -t 2500
+	dunstify -a ncmpcpp -r 27072 "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)" -t 2500 -i default
 fi
