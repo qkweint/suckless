@@ -1,3 +1,4 @@
+#!/bin/bash
 picom &
 ~/.fehbg & 
 xinput set-prop "SINOWEALTH Wired Gaming Mouse" "libinput Accel Speed" -0.8 &
